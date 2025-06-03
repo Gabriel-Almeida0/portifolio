@@ -1,0 +1,236 @@
+/* Estilos específicos para a página de projetos */
+
+.projects-section {
+  padding: 4rem 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 3rem;
+}
+
+/* Grid de projetos */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-item {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.project-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.05);
+}
+
+.project-title {
+  font-size: 1.5rem;
+  margin: 0 0 1rem 0;
+  color: var(--foreground);
+}
+
+.project-description {
+  color: var(--gray-400);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s;
+  padding: 0.5rem 0;
+}
+
+.project-link:hover {
+  color: var(--primary-glow);
+  text-shadow: 0 0 5px var(--primary-glow);
+}
+
+.project-link svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Estilo para projeto futuro */
+.future-project {
+  background: linear-gradient(145deg, rgba(0, 255, 221, 0.05), rgba(0, 0, 0, 0));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.future-project:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--primary), transparent);
+  animation: borderPulse 3s infinite;
+}
+
+.project-image.placeholder {
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.project-image.placeholder .animated-icon {
+  color: var(--primary);
+  opacity: 0.7;
+  transform-origin: center;
+  animation: starPulse 4s infinite alternate;
+  position: relative;
+  z-index: 2;
+}
+
+.notify-btn {
+  background: rgba(0, 255, 221, 0.1);
+  border: 1px solid var(--primary);
+  border-radius: 2rem;
+  padding: 0.6rem 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.notify-btn:hover {
+  background: rgba(0, 255, 221, 0.2);
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px rgba(0, 255, 221, 0.3);
+}
+
+/* Animações adicionais */
+@keyframes starPulse {
+  0% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 2px var(--primary));
+  }
+  100% {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 8px var(--primary));
+  }
+}
+
+@keyframes borderPulse {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Animação de entrada */
+.fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .project-card {
+    padding: 1.5rem;
+  }
+  
+  .project-description {
+    font-size: 0.95rem;
+  }
+
+  .project-image {
+    height: 180px;
+  }
+} 

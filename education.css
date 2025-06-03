@@ -1,0 +1,122 @@
+/* Estilos específicos para a página de formação */
+
+.education-section {
+  padding: 4rem 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 3rem;
+}
+
+.education-content {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .education-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .education-card {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .education-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .education-card {
+    grid-column: auto;
+  }
+}
+
+.education-card,
+.interests-card,
+.certifications-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.education-card:hover,
+.interests-card:hover,
+.certifications-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.education-card h2,
+.interests-card h2,
+.certifications-card h2 {
+  margin-bottom: 1rem;
+  color: var(--primary);
+  font-size: 1.5rem;
+}
+
+.education-card h3 {
+  color: var(--foreground);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.education-card .status {
+  display: inline-block;
+  background-color: rgba(0, 255, 221, 0.1);
+  color: var(--primary);
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--primary);
+}
+
+.education-card p,
+.interests-card p {
+  color: var(--gray-400);
+}
+
+.interests-card .areas {
+  color: var(--foreground);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.certification-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.certification-list li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--gray-400);
+}
+
+.certification-list li:first-child {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+} 
