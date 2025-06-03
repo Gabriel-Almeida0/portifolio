@@ -1,0 +1,89 @@
+{
+  "Navigation": {
+    "home": "Início",
+    "education": "Formação",
+    "services": "Serviços",
+    "testimonials": "Depoimentos",
+    "contact": "Contato"
+  },
+  "Home": {
+    "greeting": "Olá, sou",
+    "name": "Gabriel",
+    "role": "Eu sou um",
+    "job": "Desenvolvedor Full Stack",
+    "description": "Olá, sou Gabriel, um Desenvolvedor Full Stack. Tenho experiência em várias tecnologias e estou sempre em busca de novos desafios. Vamos conversar sobre como posso ajudar sua empresa!",
+    "hire": "Contratar",
+    "contact": "Contato"
+  },
+  "Education": {
+    "title": "Minha Formação",
+    "my": "Minha",
+    "education": "Formação",
+    "degree": "Bacharelado em Ciência da Computação",
+    "university": "Universidade Tiradentes (UNIT-SE)",
+    "status": "Em andamento",
+    "description": "Estudo de programação, algoritmos, estruturas de dados, sistemas operacionais e desenvolvimento de software.",
+    "interests": {
+      "title": "Áreas de Interesse",
+      "areas": "Desenvolvimento Web | Inteligência Artificial | Ciência de Dados",
+      "description": "Foco em tecnologias modernas e aplicações práticas para soluções digitais."
+    },
+    "certifications": {
+      "title": "Certificações",
+      "cert1": "Desenvolvimento Web Full Stack",
+      "cert2": "Fundamentos de Programação",
+      "cert3": "Tecnologias Web Modernas"
+    }
+  },
+  "Services": {
+    "title": "Meus Serviços",
+    "my": "Meus",
+    "services": "Serviços",
+    "uiDesign": {
+      "title": "Design de Interface",
+      "description": "Criação de interfaces bonitas e intuitivas que encantam os usuários e atingem os objetivos do negócio"
+    },
+    "frontendDev": {
+      "title": "Desenvolvimento Frontend",
+      "description": "Construção de sites responsivos e de alto desempenho usando tecnologias web modernas"
+    },
+    "mobileDesign": {
+      "title": "Design Mobile",
+      "description": "Desenvolvimento de experiências mobile-first que funcionam perfeitamente em todos os dispositivos"
+    },
+    "uxConsulting": {
+      "title": "Consultoria UX",
+      "description": "Fornecimento de orientação especializada em experiência do usuário e design de interação"
+    }
+  },
+  "Testimonials": {
+    "title": "Depoimentos de Clientes",
+    "client": "Depoimentos de",
+    "testimonials": "Clientes",
+    "clientName": "Nome do Cliente",
+    "clientPosition": "Cargo na Empresa",
+    "testimonialText": "Trabalhar com Almeida foi um prazer absoluto. Sua atenção aos detalhes e abordagem criativa na solução de problemas resultou em um site que superou nossas expectativas. Foi profissional, responsivo e entregou o projeto no prazo e dentro do orçamento."
+  },
+  "Contact": {
+    "title": "Entre em Contato",
+    "getIn": "Entre em",
+    "touch": "Contato",
+    "name": "Nome",
+    "namePlaceholder": "Seu nome",
+    "email": "Email",
+    "emailPlaceholder": "Seu email",
+    "subject": "Assunto",
+    "subjectPlaceholder": "Assunto",
+    "message": "Mensagem",
+    "messagePlaceholder": "Sua mensagem",
+    "sendButton": "Enviar Mensagem",
+    "contactInfo": {
+      "email": "Email",
+      "emailValue": "gabrielalmeida0898p2p@gmail.com",
+      "phone": "Telefone",
+      "phoneValue": "+1 (555) 000-0000",
+      "location": "Localização",
+      "locationValue": "San Francisco, CA"
+    }
+  }
+} 

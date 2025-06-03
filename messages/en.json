@@ -1,0 +1,89 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "education": "Education",
+    "services": "Services",
+    "testimonials": "Testimonials",
+    "contact": "Contact"
+  },
+  "Home": {
+    "greeting": "Hi, It's",
+    "name": "Gabriel",
+    "role": "I'm a",
+    "job": "Full Stack Developer",
+    "description": "Hi, I'm Gabriel, a Full Stack Developer. I have experience in various technologies and am always looking for new challenges. Let's talk about how I can help your company!",
+    "hire": "Hire",
+    "contact": "Contact"
+  },
+  "Education": {
+    "title": "My Education",
+    "my": "My",
+    "education": "Education",
+    "degree": "Bachelor of Computer Science",
+    "university": "Tiradentes University (UNIT-SE)",
+    "status": "In progress",
+    "description": "Study of programming, algorithms, data structures, operating systems and software development.",
+    "interests": {
+      "title": "Areas of Interest",
+      "areas": "Web Development | Artificial Intelligence | Data Science",
+      "description": "Focus on modern technologies and practical applications for digital solutions."
+    },
+    "certifications": {
+      "title": "Certifications",
+      "cert1": "Full Stack Web Development",
+      "cert2": "Programming Fundamentals",
+      "cert3": "Modern Web Technologies"
+    }
+  },
+  "Services": {
+    "title": "My Services",
+    "my": "My",
+    "services": "Services",
+    "uiDesign": {
+      "title": "UI Design",
+      "description": "Creating beautiful, intuitive interfaces that delight users and achieve business goals"
+    },
+    "frontendDev": {
+      "title": "Frontend Development",
+      "description": "Building responsive, performant websites using modern web technologies"
+    },
+    "mobileDesign": {
+      "title": "Mobile Design",
+      "description": "Designing mobile-first experiences that work seamlessly across devices"
+    },
+    "uxConsulting": {
+      "title": "UX Consulting",
+      "description": "Providing expert guidance on user experience and interaction design"
+    }
+  },
+  "Testimonials": {
+    "title": "Client Testimonials",
+    "client": "Client",
+    "testimonials": "Testimonials",
+    "clientName": "Client Name",
+    "clientPosition": "Company Position",
+    "testimonialText": "Working with Almeida was an absolute pleasure. Her attention to detail and creative approach to problem-solving resulted in a website that exceeded our expectations. She was professional, responsive, and delivered the project on time and within budget."
+  },
+  "Contact": {
+    "title": "Get in Touch",
+    "getIn": "Get in",
+    "touch": "Touch",
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "email": "Email",
+    "emailPlaceholder": "Your email",
+    "subject": "Subject",
+    "subjectPlaceholder": "Subject",
+    "message": "Message",
+    "messagePlaceholder": "Your message",
+    "sendButton": "Send Message",
+    "contactInfo": {
+      "email": "Email",
+      "emailValue": "gabrielalmeida0898p2p@gmail.com",
+      "phone": "Phone",
+      "phoneValue": "+1 (555) 000-0000",
+      "location": "Location",
+      "locationValue": "San Francisco, CA"
+    }
+  }
+} 
